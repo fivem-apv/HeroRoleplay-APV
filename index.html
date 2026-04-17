@@ -3,29 +3,47 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Algemene Plaatselijke Verordening</title>
+<title>APV - Hero Roleplay</title>
 
-<header class="topbar">
-  <div class="topbar-content">
-    <div class="logo"></div>
-    <span class="title">Hero Roleplay</span>
-  </div>
-</header>
-
-  <style>
-
-  
+<style>
   body {
     margin: 0;
-    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    font-family: "Segoe UI", Arial, sans-serif;
     color: #333;
-    background: #fff;
-    display: flex;
   }
 
+  /* HEADER */
+  .topbar {
+    width: 100%;
+    height: 70px;
+    background: #4c5fb3;
+    display: flex;
+    align-items: center;
+  }
+
+  .topbar-content {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+  }
+
+  .logo {
+    width: 28px;
+    height: 28px;
+    margin-right: 12px;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+  }
+
+  .title {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  /* LAYOUT */
   .container {
     display: flex;
-    width: 100%;
   }
 
   .main {
@@ -38,11 +56,9 @@
     font-weight: 300;
     font-size: 36px;
     color: #666;
-    margin-bottom: 10px;
   }
 
   h2 {
-    font-weight: 400;
     margin-top: 40px;
     color: #444;
   }
@@ -82,19 +98,15 @@
     border-radius: 4px;
   }
 
-  .notice strong {
-    display: block;
-    margin-bottom: 8px;
-  }
-
+  /* SIDEBAR */
   .sidebar {
     width: 280px;
     border-left: 1px solid #ddd;
     background: #fafafa;
     padding: 25px;
     position: sticky;
-    top: 0;
-    height: 100vh;
+    top: 70px;
+    height: calc(100vh - 70px);
     overflow-y: auto;
   }
 
@@ -116,7 +128,7 @@
     color: #007BFF;
   }
 
-  .sidebar .section {
+  .section {
     margin-top: 20px;
   }
 </style>
@@ -124,6 +136,15 @@
 
 <body>
 
+<!-- HEADER -->
+<header class="topbar">
+  <div class="topbar-content">
+    <div class="logo"></div>
+    <span class="title">Hero Roleplay</span>
+  </div>
+</header>
+
+<!-- CONTENT -->
 <div class="container">
 
   <div class="main">
@@ -148,19 +169,18 @@
     </table>
 
     <div class="notice">
-      <strong>LET OP</strong>
+      <strong>LET OP</strong><br>
       De onderstaande categorieën zijn richtlijnen, een staflid kan ten allen tijden een andere straf bepalen.
-      Door het joinen van de server ga je automatisch akkoord met deze regels, deze kunnen ten allen tijde aangepast worden.
+      Door het joinen van de server ga je automatisch akkoord met deze regels.
     </div>
 
     <h2 id="algemeen">Algemene Bepalingen</h2>
 
     <h3 id="a1">A1 - Reikwijdte</h3>
     <p>
-      Deze Algemene Plaatselijke Verordening (verder aangeduid als APV) is bedoeld als aanvulling op het Nederlands Recht
-      en heeft betrekking op het eiland, de gemeente en de server.
+      Deze Algemene Plaatselijke Verordening (APV) is bedoeld als aanvulling op het Nederlands Recht
+      en heeft betrekking op de server.
     </p>
-
   </div>
 
   <div class="sidebar">
@@ -173,7 +193,7 @@
       <a href="#a1">A1 - Reikwijdte</a>
       <a href="#">A2 - Geldigheid</a>
       <a href="#">A3 - Strafbepaling</a>
-      <a href="#">A4 - Aanvullende wetten en regels</a>
+      <a href="#">A4 - Aanvullende regels</a>
     </div>
 
     <div class="section">
@@ -186,12 +206,6 @@
       <a href="#">Artikel 6 - Beroepskleding</a>
       <a href="#">Artikel 7 - Baiting</a>
       <a href="#">Artikel 8 - Spam</a>
-      <a href="#">Artikel 9.1 - Combat-logging</a>
-      <a href="#">Artikel 9.2 - Combat-stashen</a>
-      <a href="#">Artikel 10 - GTAV Driving style</a>
-      <a href="#">Artikel 11 - Value of Life</a>
-      <a href="#">Artikel 12 - Microfoon / stemvervormer</a>
-      <a href="#">Artikel 13 - Nederlandse Taal</a>
     </div>
 
   </div>
