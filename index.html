@@ -22,6 +22,9 @@
   }
 
   .topbar-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
     display: flex;
     align-items: center;
     padding: 0 30px;
@@ -41,15 +44,16 @@
     font-weight: 600;
   }
 
-  /* LAYOUT */
+  /* LAYOUT (GECENTREERD) */
   .container {
     display: flex;
+    max-width: 1200px;
+    margin: 0 auto; /* 👈 dit centreert alles */
   }
 
   .main {
     flex: 1;
     padding: 50px 60px;
-    max-width: 900px;
   }
 
   h1 {
@@ -136,7 +140,6 @@
 
 <body>
 
-<!-- HEADER -->
 <header class="topbar">
   <div class="topbar-content">
     <div class="logo"></div>
@@ -144,7 +147,6 @@
   </div>
 </header>
 
-<!-- CONTENT -->
 <div class="container">
 
   <div class="main">
